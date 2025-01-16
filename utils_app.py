@@ -6,10 +6,7 @@ import base64
 import streamlit as st
 import cohere
 from PyPDF2 import PdfReader
-from dotenv import load_dotenv
 
-
-load_dotenv()
 doc_pth = "resources"
 documents = os.listdir(doc_pth)
 co = cohere.ClientV2(st.secrets["COHERE_KEY"])
