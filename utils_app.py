@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 doc_pth = "resources"
 documents = os.listdir(doc_pth)
-co = cohere.ClientV2(os.getenv("COHERE_KEY"))
+co = cohere.ClientV2(st.secrets["COHERE_KEY"])
 
 
 def chunk_text(text, chunk_size=2000):

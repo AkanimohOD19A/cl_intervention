@@ -1,3 +1,4 @@
 .env
 clGen_venv
+.streamlit
 chroma_db
